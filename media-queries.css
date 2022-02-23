@@ -1,0 +1,37 @@
+/* @import url('https://fonts.googleapis.com/'); */
+/* https://fonts.google.com/ */
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+
+}
+
+* {
+    /*border: 1px solid var(--black);*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 15px;
+}
+
+.alert-info {
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+    padding: 10px;
+    border: 2px solid lightgray;
+}
+
+/* medium and up */
+@media only screen and (min-width: 768px) {
+    .hidden-on-desktop {
+        display: none;
+    }
+}
