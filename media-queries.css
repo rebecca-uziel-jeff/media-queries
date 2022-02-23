@@ -21,14 +21,69 @@ body {
     margin: 15px;
 }
 
+h1 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+
+}
+
 .alert-info {
     display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
     justify-content: center;
     background-color: lightblue;
     padding: 10px;
     border: 2px solid lightgray;
+    max-width: 100%;
+    margin: auto;
 }
 
+nav {
+    width: 100%;
+
+    /*display: flex;*/
+    /*justify-content: center;*/
+}
+.nav-links {
+    width: 100%;
+    flex-direction: column;
+    align-content: center;
+;
+
+}
+
+li {
+    /*padding: 10px;*/
+    list-style: none;
+    background-color: lightgray;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+img {
+    margin: auto;
+    max-width: 100%;
+}
+
+section {
+    padding: 5px;
+}
+
+footer {
+    padding-top: 5px
+}
+
+i {
+    color: black;
+    font-size: 1.5rem;
+}
 /* medium and up */
 @media only screen and (min-width: 768px) {
     .hidden-on-desktop {
