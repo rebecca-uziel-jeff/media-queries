@@ -1,5 +1,4 @@
-/* @import url('https://fonts.googleapis.com/'); */
-/* https://fonts.google.com/ */
+@import url('https://fonts.googleapis.com/css2?family=Shizuru&display=swap');
 
 :root {
     --white: #FFFFFF;
@@ -8,7 +7,7 @@
 }
 
 * {
-    /*border: 1px solid var(--black);*/
+    /* border: 1px solid var(--black);*/
 }
 
 * {
@@ -25,19 +24,28 @@ h1 {
     font-size: 2rem;
     display: flex;
     justify-content: center;
+    font-family: Verdana, sans-serif;
 
 }
 
 .alert-info {
     display: flex;
     flex-direction: column;
-    /*align-items: center;*/
+    align-items: center;
     justify-content: center;
     background-color: lightblue;
     padding: 10px;
     border: 2px solid lightgray;
     max-width: 100%;
     margin: auto;
+
+}
+
+.alert-info a {
+    text-decoration: none;
+    color: black;
+    font-family: "Shizuru", serif;
+
 }
 
 nav {
@@ -46,11 +54,11 @@ nav {
     /*display: flex;*/
     /*justify-content: center;*/
 }
+
 .nav-links {
     width: 100%;
     flex-direction: column;
     align-content: center;
-;
 
 }
 
@@ -59,9 +67,9 @@ li {
     list-style: none;
     background-color: lightgray;
     margin: 10px 0;
-    width: 100%;
+    /* width: 100%;*/
     padding: 10px;
-
+    /*max-width: 100%;*/
     display: flex;
     justify-content: center;
 
@@ -76,17 +84,69 @@ section {
     padding: 5px;
 }
 
+h2 {
+    font-family: Helvetica;
+
+}
+
+p {
+    margin: 10px 0;
+    font-family: Arial;
+
+}
+
+.sub-section {
+    font-style: italic;
+}
+
 footer {
-    padding-top: 5px
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 i {
     color: black;
     font-size: 1.5rem;
 }
+
 /* medium and up */
 @media only screen and (min-width: 768px) {
     .hidden-on-desktop {
         display: none;
     }
+
+
+    body {
+        display: flex;
+        /*justify-content: space-between;*/
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    h1 {
+        display: inline;
+        width: 40%;
+        float: left;
+    }
+
+    nav {
+        display: flex;
+        float: right;
+    }
+
+    ul.nav-links li {
+        display: inline-block;
+        float: right;
+        position: relative;
+        bottom: 40px;
+    }
+
+    li {
+        padding: 10px;
+        background-color: #FFFFFF;
+    }
+
 }
+
