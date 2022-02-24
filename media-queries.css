@@ -130,8 +130,15 @@ i {
 
         max-width: 60%;
         margin-right: 25px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
+    section{
+        margin-top: 2%;
+    }
+    footer{
+        margin-top: 10%;
+    }
+
 }
 
 
