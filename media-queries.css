@@ -7,6 +7,11 @@
     --bg-alert: #ccffff; /* light blue */
     --bg-links: #cccccc; /* gray */
 
+    --dark-green: #66806A;
+    --light-green: #B4C6A6;
+    --orangeish: #FFC286;
+    --yellowish: #FFF1AF;
+
 }
 
 * {
@@ -20,6 +25,8 @@ body {
     margin: 15px;
     font-family: Poppins, Serif, sans-serif;
     font-size: .8rem;
+    background-color: var(--light-green);
+    color: var(--dark-green)
 }
 
 h1 {
@@ -35,16 +42,16 @@ h1 {
     align-items: center;
     justify-content: center;
 
-    background-color: var(--bg-alert);
+    background-color: var(--yellowish);
     padding: 10px;
-    border: 2px solid var(--bg-links);
+    border: 2px solid var(--dark-green);
     max-width: 100%;
     margin: auto;
 }
 
 .alert-info a {
     text-decoration: none;
-    color: var(--black);
+    color: var(--dark-green);
 }
 
 nav {
@@ -61,9 +68,25 @@ li {
     justify-content: center;
 
     list-style: none;
-    background-color: var(--bg-links);
+    /*background-color: var(--dark-green);*/
     margin: 10px 0;
     padding: 10px;
+
+}
+
+ul > li {
+    background-color: var(--light-green);
+}
+
+ul > li > a {
+    color: var(--dark-green);
+}
+
+ul > li > a:hover {
+    color: var(--orangeish);
+    background-color: var(--dark-green);
+    padding: 10px;
+    border-radius: 20px;
 
 }
 
@@ -88,6 +111,10 @@ footer {
 i {
     color: black;
     font-size: 1.5rem;
+}
+
+.social-media > a > i:hover {
+    color: var(--orangeish);
 }
 
 /* medium and up */
@@ -132,10 +159,12 @@ i {
         margin-right: 25px;
         margin-bottom: 30px;
     }
-    section{
+
+    section {
         margin-top: 2%;
     }
-    footer{
+
+    footer {
         margin-top: 10%;
     }
 
